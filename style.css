@@ -1,6 +1,6 @@
 .header {
     list-style-type: none;
-    margin: 10px; margin-left: -50px;
+    margin: 0px; margin-left: -50px;
     overflow: hidden;
     margin-right: 16px;
     font-family: arial,sans-serif;
@@ -23,7 +23,8 @@
   
   .container {
     text-align: center;
-    margin: 100px;
+    margin: 140px;
+    padding-top: 50px;
   }
   
   .search-area {
@@ -34,7 +35,7 @@
     z-index: 3;
     height: 44px;
     margin: 0 auto;
-    margin-top: -77px;
+    margin-top: -120px;
     width: 582px;
     border-radius: 50px;
   }
@@ -56,6 +57,13 @@
     padding-right: 13px;
     margin-top: -5px;
   }
+
+  .voice-img {
+    display: flex;
+    align-items: center;
+    padding-left: 13px;
+    margin-top: -2px;
+  }
   
   .search-img span {
     color: #9aa0a6;
@@ -68,6 +76,12 @@
     position: relative;
   }
   
+  .buttons {
+      border: none; 
+      color: transparent; 
+      padding: 18px 34px;
+  }
+
   .input-enter {
     display: flex;
     flex: 1;
@@ -110,24 +124,44 @@
   }
   
   .googlesearch {
-    margin: 11px 4px;
+    margin: 11px 8px;
     padding: 0 16px;
-    line-height: 27px;
+    line-height: 36px;
     min-width: 54px;
     text-align: center;
     cursor: pointer;
     user-select: none;
+    border: 1px;
+    border-color: #f2f2f2;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .feelinglucky {
     padding: 0 16px;
-    line-height: 27px;
+    line-height: 36px;
     min-width: 54px;
     text-align: center;
     cursor: pointer;
     user-select: none;
+    border: 1px;
+    border-color: #f2f2f2;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
+  .googlesearch:hover {
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+  }
+
+  .feelinglucky:hover {
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+  }
+
   .footer {
     margin: 5px;
     padding: 0;
@@ -135,22 +169,24 @@
     border: 1px solid #dfe1e5;
     border-top: 1px solid #dadce0;
     position: fixed;
-    bottom: 0;
+    bottom: -5px;
     width: 100%;
     margin-left: -8px;
     line-height: 10px;
+    background-color: #f2f2f2;
   }
   
   .footerli {
     float: left;
     background-color: #f2f2f2;
+    list-style-type: none;
   }
   
   .footerli a {
     display: block;
     color: #70757a;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
     font-family: arial, sans-serif;
     font-size: 14px;
